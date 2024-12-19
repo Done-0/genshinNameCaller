@@ -1,19 +1,36 @@
 # README
 
-## About
+## 介绍
 
-This is the official Wails Vue template.
+欢迎来到 `genshinNameCaller` 项目，这是一个基于 `wails` 和 `vue.js` 构建的应用。
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
+## 快速开始
 
-## Live Development
+您可以通过以下命令启动项目：
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+```bash
+wails dev
+```
+
+## 键位
+
+双击 Gui 切换全屏
+
+## 关于
+
+您可以通过编辑 `wails.json` 来配置项目。有关项目设置的更多信息，请访问：https://wails.io/docs/reference/project-config
+
+## 实时开发
+
+要在实时开发模式下运行，请在项目目录中运行 `wails dev`。这将启动一个 `Vite` 开发服务器，为您的前端更改提供非常快速的热重载。  
+如果您想在浏览器中进行开发并访问您的 Go 方法，还有一个开发服务器在 [http://localhost:34115](http://localhost:34115) 上运行。  
+请在浏览器中连接到此地址，您可以通过开发者工具调用您的 Go 代码。
 
 ## Building
 
-To build a redistributable, production mode package, use `wails build`.
+要构建一个可再分发的生产模式包，请使用 `wails build`。
+
+执行下面的命令将构建一个 Windows/Linux 的可执行软件：
+```bash
+wails build
+```
