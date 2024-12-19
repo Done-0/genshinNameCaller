@@ -1,0 +1,23 @@
+{
+  "version": "2",
+  "name": "nameCaller",
+  "assetdir": "./frontend/src/assets",
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "outputfilename": "nameCaller",
+  "frontend": {
+    "dir": "./frontend", 
+    "build": {
+      "dev": false,
+      "dist": "./dist",
+      "public": "./frontend/public"
+    }
+  },
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Done-0",
+    "email": "fenderisfine@outlook.com"
+  }
+}
